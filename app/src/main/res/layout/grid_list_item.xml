@@ -28,6 +28,57 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <ImageView
+            android:id="@+id/dog_img"
+            android:layout_width="wrap_content"
+            android:layout_height="194dp"
+            android:paddingBottom="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/faye"
+            android:contentDescription="@string/todo" />
+
+
+        <TextView
+
+            android:id="@+id/dog_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/tziel"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            app:layout_constraintBottom_toTopOf="@id/dog_age"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dog_img" />
+
+        <TextView
+            android:id="@+id/dog_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/age_7"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintBottom_toTopOf="@id/dog_hobbies"
+            app:layout_constraintStart_toStartOf="@id/dog_name"
+            app:layout_constraintTop_toBottomOf="@id/dog_name" />
+
+        <TextView
+            android:id="@+id/dog_hobbies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/hobbies_sunbathing"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/dog_name"
+            app:layout_constraintTop_toBottomOf="@id/dog_age" />
+
         <!-- TODO: Note that this list item will be used in a grid view which requires a
                 different layout because the list will have two columns of cards.
                 This means that the information within the card must stack the vertically
